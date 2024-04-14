@@ -1,8 +1,12 @@
 import React from "react";
+import Navbar from "@/components/Navbar";
 
 export default function Page() {
   return (
     <div className="relative">
+      <div className="absolute top-2 w-full flex flex-row justify-center">
+        <Navbar />
+      </div>
       <video width="1500" height="800" muted loop={true} autoPlay={true}>
         <source src="/tours/el jam amphitheatre.mp4" type="video/mp4" />
       </video>

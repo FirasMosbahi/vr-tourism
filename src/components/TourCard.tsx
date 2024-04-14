@@ -1,15 +1,18 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Link from "next/link";
 
 export default function TourCard({
   video,
   title,
   briefIntro,
+  link,
 }: {
   video: string;
   title: string;
   briefIntro: string;
+  link: string;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -27,7 +30,7 @@ export default function TourCard({
     <div
       onMouseEnter={toggleVideo}
       onMouseLeave={toggleVideo}
-      className="relative max-w-sm bg-white h-[400px] border border-gray-200 rounded-lg shadow"
+      className="relative max-w-sm bg-white h-[430px] border border-gray-200 rounded-lg shadow"
     >
       <video ref={videoRef} width="400" height="520" muted autoPlay={false}>
         <source src={video} type="video/mp4" />
@@ -38,9 +41,11 @@ export default function TourCard({
             {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700">{briefIntro}</p>
-        <a
-          href="#"
+        <p className="mb-3 text-[14px] font-normal text-gray-700">
+          {briefIntro}
+        </p>
+        <Link
+          href={link}
           className="absolute bottom-5 right-5 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
           Read more
@@ -59,7 +64,7 @@ export default function TourCard({
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );

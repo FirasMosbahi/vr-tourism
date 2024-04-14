@@ -1,4 +1,6 @@
 "use client";
+
+// @ts-ignore
 import { Pannellum, PannellumVideo } from "pannellum-react";
 
 import React from "react";

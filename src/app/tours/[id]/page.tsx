@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { getTourById } from "@/data/tours";
+import Link from "next/link";
 
 export default function Page({ params }: { params: { id: string } }) {
   const tour = getTourById(Number.parseInt(params.id ?? "1"));
@@ -19,9 +20,11 @@ export default function Page({ params }: { params: { id: string } }) {
         <p className="text-[28px] text-center max-w-[600px]">
           {tour.callToAction}
         </p>
-        <button className="px-4 py-2 mt-8 border border-white border-solid rounded-2xl">
-          Visiter le monument
-        </button>
+        <Link href={tour.vr ? `/vr/${tour.id}` : "#"} target="_blank">
+          <button className="px-4 py-2 mt-8 border border-white border-solid rounded-2xl">
+            Visiter le monument
+          </button>
+        </Link>
       </div>
     </div>
   );

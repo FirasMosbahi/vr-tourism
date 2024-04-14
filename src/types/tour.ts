@@ -5,4 +5,5 @@ export type Tour = {
   briefIntro: string;
   description: string[];
   callToAction: string;
+  vr?: boolean;
 };

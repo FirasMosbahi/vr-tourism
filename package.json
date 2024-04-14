@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@photo-sphere-viewer/core": "^5.7.2",
+    "@types/three": "^0.163.0",
     "next": "14.2.1",
+    "pannellum-react": "^1.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-photo-sphere-viewer": "^5.0.2-psv5.7.1",
+    "react-three-fiber": "^6.0.13",
+    "react360imgthree": "^2.1.6",
+    "three": "^0.163.0"
   },
   "devDependencies": {
     "@types/node": "^20",

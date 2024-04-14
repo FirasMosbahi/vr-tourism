@@ -16,9 +16,10 @@ const TOURS: Tour[] = [
     ],
     callToAction:
       "Learn more about the history and architecture of this incredible Roman marvel!",
+    vr: true,
   },
   {
-    id: 2,
+    id: 4,
     video: "/tours/mosque djerba.mp4",
     title: "mosque djerba",
     briefIntro:
@@ -30,7 +31,7 @@ const TOURS: Tour[] = [
       "Embark on a cultural adventure and discover the captivating mosque of Djerba!",
   },
   {
-    id: 3,
+    id: 2,
     video: "/tours/mosque el zaitouna.mp4",
     title: "Mosqué el Zaitouna",
     description: [
@@ -41,9 +42,10 @@ const TOURS: Tour[] = [
       "Journey to the heart of Tunis and discover the Ez-Zitouna Mosque, a majestic landmark that has witnessed centuries of Tunisia's rich history.",
     callToAction:
       "Step back in time and explore the architectural wonders of Ez-Zitouna Mosque!",
+    vr: true,
   },
   {
-    id: 4,
+    id: 3,
     video: "/tours/musée archéologique de tunisie.mp4",
     title: "musée archéologique de Tunis",
     briefIntro:
@@ -55,6 +57,7 @@ const TOURS: Tour[] = [
     ],
     callToAction:
       "Plan your visit to the Musée Archéologique de Tunis and embark on a journey through time!",
+    vr: true,
   },
   {
     id: 5,
